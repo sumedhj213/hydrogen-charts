@@ -82,7 +82,7 @@ export default function MasterEnergyDashboard() {
       {/* ── HEADER ── */}
       <div style={{ padding: "36px 44px 22px", borderBottom: "1px solid #1e293b", background: "rgba(5,12,24,0.95)" }}>
         <p style={{ color: "#38bdf8", fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 8 }}>
-          ENERGY COST AND CARBON DASHBOARD · MARCH 2026
+          MASTER ENERGY COST DASHBOARD · MARCH 2026
         </p>
         <h1 style={{ fontSize: "clamp(20px,3.5vw,30px)", fontWeight: 700, color: "#f8fafc", margin: "0 0 6px", fontFamily: "Georgia, serif", letterSpacing: "-0.02em" }}>
           Hydrogen Colors vs. All Fuels — Cost per GJ
@@ -123,9 +123,9 @@ export default function MasterEnergyDashboard() {
 
             <div style={{ background: "#0a1525", border: "1px solid #1e3a5f", borderRadius: 12, padding: "20px 8px 16px" }}>
               <ResponsiveContainer width="100%" height={460}>
-                <BarChart data={sorted} layout="vertical" margin={{ top: 10, right: 90, left: 110, bottom: 10 }}>
+                <BarChart data={sorted} layout="vertical" margin={{ top: 10, right: 90, left: 110, bottom: 24 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#0f1f35" horizontal={false} />
-                  <XAxis type="number" tick={{ fill: "#64748b", fontSize: 10 }} tickFormatter={v => `$${v}`} domain={[0, 45]} />
+                  <XAxis type="number" tick={{ fill: "#64748b", fontSize: 10 }} tickFormatter={v => `$${v}`} domain={[0, 45]} label={{ value: "Cost ($/GJ)", position: "insideBottom", offset: -10, fill: "#475569", fontSize: 11 }} />
                   <YAxis type="category" dataKey="name" tick={{ fill: "#94a3b8", fontSize: 10 }} width={110} />
                   <Tooltip content={<TT />} formatter={(v) => [`$${v}/GJ`, "Cost"]} />
                   <ReferenceLine x={16.7} stroke="#6b728040" strokeDasharray="4 3"
