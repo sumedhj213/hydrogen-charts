@@ -1,15 +1,15 @@
 "use client";
 import dynamic from "next/dynamic";
 
-const HydrogenColorSpectrum = dynamic(
-  () => import("./components/hydrogen_color_spectrum"),
+const MasterEnergyDashboard = dynamic(
+  () => import("./components/energy_cost_and_carbon_dashboard"),
   { ssr: false }
 );
 
 export default function Home() {
   return (
     <main>
-      <HydrogenColorSpectrum />
+      <MasterEnergyDashboard />
     </main>
   );
 }
