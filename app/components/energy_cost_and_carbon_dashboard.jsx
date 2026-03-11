@@ -125,8 +125,8 @@ export default function MasterEnergyDashboard() {
               <ResponsiveContainer width="100%" height={460}>
                 <BarChart data={sorted} layout="vertical" margin={{ top: 10, right: 90, left: 110, bottom: 24 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#0f1f35" horizontal={false} />
-                  <XAxis type="number" tick={{ fill: "#64748b", fontSize: 10 }} tickFormatter={v => `$${v}`} domain={[0, 45]} label={{ value: "Cost ($/GJ)", position: "insideBottom", offset: -10, fill: "#475569", fontSize: 11 }} />
-                  <YAxis type="category" dataKey="name" tick={{ fill: "#94a3b8", fontSize: 10 }} width={110} />
+                  <XAxis type="number" tick={{ fill: "#94a3b8", fontSize: 13 }} tickFormatter={v => `$${v}`} domain={[0, 45]} label={{ value: "Cost ($/GJ)", position: "insideBottom", offset: -10, fill: "#94a3b8", fontSize: 15 }} />
+                  <YAxis type="category" dataKey="name" tick={{ fill: "#94a3b8", fontSize: 13 }} width={125} />
                   <Tooltip content={<TT />} formatter={(v) => [`$${v}/GJ`, "Cost"]} />
                   <ReferenceLine x={16.7} stroke="#6b728040" strokeDasharray="4 3"
                     label={{ value: "Grey H₂", position: "top", fill: "#6b7280", fontSize: 9 }} />
