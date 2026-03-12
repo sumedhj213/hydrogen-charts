@@ -113,7 +113,7 @@ export default function MasterEnergyDashboard() {
         {tab === "$/GJ Ranking" && (
           <div>
             <p style={{ color: "#64748b", fontSize: 11, marginBottom: 20 }}>
-              All 15 energy sources ranked cheapest→most expensive per GJ (LHV). This is the fairest apples-to-apples comparison across fuels with vastly different energy densities.
+              All 15 energy sources are ranked from cheapest to most expensive per GJ (LHV). This is the fairest apples-to-apples comparison across fuels with vastly different energy densities.
             </p>
 
             {/* Uranium spotlight */}
