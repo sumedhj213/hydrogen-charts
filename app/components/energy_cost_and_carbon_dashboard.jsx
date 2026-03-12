@@ -222,15 +222,15 @@ export default function MasterEnergyDashboard() {
                 <ScatterChart margin={{ top: 20, right: 40, left: 10, bottom: 40 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#0f1f35" />
                   <XAxis type="number" dataKey="priceGJ" name="Cost/GJ"
-                    tick={{ fill: "#64748b", fontSize: 10 }}
+                    tick={{ fill: "#64748b", fontSize: 14 }}
                     tickFormatter={v => `$${v}`}
                     domain={[0, 45]}
-                    label={{ value: "Cost per GJ (USD/GJ)", position: "insideBottom", offset: -24, fill: "#475569", fontSize: 11 }}
+                    label={{ value: "Cost per GJ (USD/GJ)", position: "insideBottom", offset: -24, fill: "#475569", fontSize: 18 }}
                   />
                   <YAxis type="number" dataKey="co2" name="CO₂"
                     tick={{ fill: "#64748b", fontSize: 10 }}
                     domain={[0, 21]}
-                    label={{ value: "CO₂ Intensity (tCO₂/t fuel)", angle: -90, position: "insideLeft", offset: 20, fill: "#475569", fontSize: 11 }}
+                    label={{ value: "CO₂ Intensity (tCO₂/t fuel)", angle: -90, position: "insideLeft", offset: 20, fill: "#475569", fontSize: 18 }}
                   />
                   <Tooltip
                     content={({ active, payload }) => {
