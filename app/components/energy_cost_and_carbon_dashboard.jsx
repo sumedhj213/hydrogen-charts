@@ -222,15 +222,15 @@ export default function MasterEnergyDashboard() {
                 <ScatterChart margin={{ top: 20, right: 40, left: 10, bottom: 40 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#0f1f35" />
                   <XAxis type="number" dataKey="priceGJ" name="Cost/GJ"
-                    tick={{ fill: "#64748b", fontSize: 14 }}
+                    tick={{ fill: "#64748b", fontSize: 12 }}
                     tickFormatter={v => `$${v}`}
                     domain={[0, 45]}
-                    label={{ value: "Cost per GJ (USD/GJ)", position: "insideBottom", offset: -24, fill: "#475569", fontSize: 18 }}
+                    label={{ value: "Cost per GJ (USD/GJ)", position: "insideBottom", offset: -24, fill: "#475569", fontSize: 12 }}
                   />
                   <YAxis type="number" dataKey="co2" name="CO₂"
                     tick={{ fill: "#64748b", fontSize: 10 }}
                     domain={[0, 21]}
-                    label={{ value: "CO₂ Intensity (tCO₂/t fuel)", angle: -90, position: "insideLeft", offset: 20, fill: "#475569", fontSize: 18 }}
+                    label={{ value: "CO₂ Intensity (tCO₂/t fuel)", angle: -90, position: "insideLeft", offset: 20, fill: "#475569", fontSize: 12 }}
                   />
                   <Tooltip
                     content={({ active, payload }) => {
@@ -255,7 +255,7 @@ export default function MasterEnergyDashboard() {
                         <g>
                           <circle cx={cx} cy={cy} r={18} fill={d.color} fillOpacity={0.12} stroke={d.color} strokeWidth={1} />
                           <circle cx={cx} cy={cy} r={8}  fill={d.color} fillOpacity={0.9} />
-                          <text x={cx} y={cy - 24} textAnchor="middle" fill={d.color} fontSize={9} fontFamily="monospace">{d.name}</text>
+                          <text x={cx} y={cy - 24} textAnchor="middle" fill={d.color} fontSize={11} fontFamily="monospace">{d.name}</text>
                         </g>
                       )}
                     />
