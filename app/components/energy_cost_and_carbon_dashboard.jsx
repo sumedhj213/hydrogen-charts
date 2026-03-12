@@ -84,13 +84,13 @@ export default function MasterEnergyDashboard() {
       {/* ── HEADER ── */}
       <div style={{ padding: "36px 44px 22px", borderBottom: "1px solid #1e293b", background: "rgba(5,12,24,0.95)" }}>
         <p style={{ color: "#38bdf8", fontSize: 10, letterSpacing: "0.3em", textTransform: "uppercase", marginBottom: 8 }}>
-          MASTER ENERGY COST DASHBOARD · MARCH 2026
+          ENERGY COST AND CARBON DASHBOARD · MARCH 2026
         </p>
         <h1 style={{ fontSize: "clamp(20px,3.5vw,30px)", fontWeight: 700, color: "#f8fafc", margin: "0 0 6px", fontFamily: "Georgia, serif", letterSpacing: "-0.02em" }}>
           Hydrogen Colors vs. All Fuels — Cost per GJ
         </h1>
         <p style={{ color: "#475569", fontSize: 12, margin: 0 }}>
-          15 energy sources · Fossil · Hydrogen (8 colors) · Nuclear · Methanol · LHV basis · Live market prices
+          15 energy sources · Fossil · Hydrogen (8 colors) · Nuclear · Methanol · LHV basis · Most recent market prices
         </p>
       </div>
 
