@@ -87,7 +87,7 @@ export default function MasterEnergyDashboard() {
           ENERGY COST AND CARBON DASHBOARD · MARCH 2026
         </p>
         <h1 style={{ fontSize: "clamp(20px,3.5vw,30px)", fontWeight: 700, color: "#f8fafc", margin: "0 0 6px", fontFamily: "Georgia, serif", letterSpacing: "-0.02em" }}>
-          Hydrogen Colors vs. All Fuels — Cost per GJ
+          Hydrogen Colors vs. All Fuels — Cost per GJ and Carbon Intensity
         </h1>
         <p style={{ color: "#475569", fontSize: 12, margin: 0 }}>
           15 energy sources · Fossil · Hydrogen (8 colors) · Nuclear · Methanol · LHV basis · Most recent market prices
